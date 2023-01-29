@@ -391,10 +391,10 @@ class Ui_MainWindow(object):
 	'''
 	def on_submit_button_clicked(self):
 		self.togglegpt = True # Placeholder to toggle on/off AI functionality
-		self.stackedWidget.setCurrentIndex(1)
 		self.captions_label.raise_()
 		self.text = self.text_input.toPlainText()
 		if self.togglegpt: self.request_gpt()
+		self.stackedWidget.setCurrentIndex(1)
 		self.mediaPlayer.play()
 		self.say_text()
 
