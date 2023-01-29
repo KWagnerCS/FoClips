@@ -1,0 +1,3 @@
+[console_scripts]
+revApiGPT = revChatGPT.GPTserver:main
+revChatGPT = revChatGPT.__main__:main

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="FoClipsLogo">
+    <file>FoClipsLogo.png</file>
+  </qresource>
+</RCC>
