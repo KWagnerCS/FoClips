@@ -7,6 +7,19 @@ FoClips has a simple modern GUI, where the user can paste any kind of text into 
 ## How we built it
 I built FoClips primarily using PyQt5, which is GUI module that integrates many of Qt's C++ Toolkits into Python. I used Qt Designer to design the GUI. I also used a package integrating Selenium and Requests to imitate the OpenAI API, avoiding token costs and other procedures.
 
+##Usage
+`pip3 install -r requirements.txt`
+
+To use the OpenAI API, you will need to provide your browser session token in the config.json file. I have provided one temporarily. This means that there might be too many requests and the AI portion of FoClips won't work, so if that is the case, insert your token into the config.json. 
+You can find the session token manually from your browser:
+Go to https://chat.openai.com/api/auth/session
+Press F12 to open console
+Go to Application > Cookies
+Copy the session token value in __Secure-next-auth.session-token
+Paste it into config.json in the current working directory
+
+After that, FoClips is ready to be ran either through an IDE or with 'python FoClips.py'
+
 ## Challenges we ran into
 Media playing was definitely a challenge I faced while using PyQt. There were often some modules that  I was not able to use because they were either outdated or replaced. Eventually I settled on an older version of PyQt5 to solve my issue. Another issue was the time constraint. Working with PyQt is brand new to me, so I needed time to read the documentation and learn how the toolkit worked. It may have taken an all-nighter, but I'm happy to say that I learned some new skills throughout the process.
 
